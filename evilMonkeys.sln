@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "evilMonkeys", "evilMonkeys\evilMonkeys.vcxproj", "{3C3D42FC-6BD3-4C8D-88FF-D8C88AB0EF15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C3D42FC-6BD3-4C8D-88FF-D8C88AB0EF15}.Debug|x64.ActiveCfg = Debug|x64
+		{3C3D42FC-6BD3-4C8D-88FF-D8C88AB0EF15}.Debug|x64.Build.0 = Debug|x64
+		{3C3D42FC-6BD3-4C8D-88FF-D8C88AB0EF15}.Debug|x86.ActiveCfg = Debug|Win32
+		{3C3D42FC-6BD3-4C8D-88FF-D8C88AB0EF15}.Debug|x86.Build.0 = Debug|Win32
+		{3C3D42FC-6BD3-4C8D-88FF-D8C88AB0EF15}.Release|x64.ActiveCfg = Release|x64
+		{3C3D42FC-6BD3-4C8D-88FF-D8C88AB0EF15}.Release|x64.Build.0 = Release|x64
+		{3C3D42FC-6BD3-4C8D-88FF-D8C88AB0EF15}.Release|x86.ActiveCfg = Release|Win32
+		{3C3D42FC-6BD3-4C8D-88FF-D8C88AB0EF15}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5836C18D-878C-44EB-808D-CE222A18B5B3}
+	EndGlobalSection
+EndGlobal
