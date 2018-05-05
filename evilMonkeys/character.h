@@ -10,12 +10,23 @@ public:
 		char up_key = 'w', char down_key = 's', char left_key = 'a',
 		char right_key = 'd');
 
-	Character();
 	~Character();
 
 	virtual void keyPress();
 
 protected:
 
+	DrawEngine* _de;
+
+	char up_key; 
+	char down_key; 
+	char left_key;
+	char right_key;
+
+	int index; 
+	int lives;
+
+	float x = 1;
+	float y = 1;
 };
 
