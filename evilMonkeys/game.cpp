@@ -7,13 +7,13 @@
 #include <iostream>
 
 // set game speed
-#define GAME_SPEED (1000 / 30)
+#define GAME_SPEED (1000 / 10)
 
 bool Game::run(void)
 {
 	_drawArea.createSprite(0, '$');
 
-	_player = new Sprite(&_drawArea, 0, 1, 1, 1);
+	_player = new Character(&_drawArea, 0);
 
 	char key = ' ';
 
@@ -28,6 +28,8 @@ bool Game::run(void)
 			timerUpdate();
 		}
 
+		_player->keyPress(key);
+
 		//std::cout << "Here's what you presed: " << key << std::endl;
 	}
 	
@@ -36,6 +38,7 @@ bool Game::run(void)
 
 	return true;
 }
+
 
 bool Game::getInput(char* c)
 {
@@ -48,14 +51,13 @@ bool Game::getInput(char* c)
 	return false;
 }
 
+
 void Game::timerUpdate(void)
 {
 	double currentTime = timeGetTime() - _lastTime;
 
 	if (currentTime < GAME_SPEED)
 		return;
-	
-	_player->move(1, 1);
 
 	_frameCount++;
 

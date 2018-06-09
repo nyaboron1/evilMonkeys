@@ -5,6 +5,7 @@
 enum
 {
 	SPRITE_CLASSID,
+	CHARACTER_CLASSID,
 };
 
 struct vector
