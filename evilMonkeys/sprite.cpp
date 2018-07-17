@@ -2,18 +2,18 @@
 #include "sprite.h"
 
 
-Sprite::Sprite(DrawEngine* de, int s_index, 
-	float x = 1, 
-	float y = 1 , 
-	int lives = 1)
+Sprite::Sprite(DrawEngine* p_de, int p_spriteIndex, 
+	float p_x = 1, 
+	float p_y = 1, 
+	int p_lives = 1)
 {
-	_drawArea = de;
-	_spriteIndex = s_index;
+	_drawArea = p_de;
+	_spriteIndex = p_spriteIndex;
 
-	_pos.x = x;
-	_pos.y = y;
+	_pos.x = p_x;
+	_pos.y = p_y;
 
-	_lives = lives;
+	_lives = p_lives;
 
 	_facingDirection.x = 1;
 	_facingDirection.y = 0;
@@ -28,7 +28,9 @@ Sprite::~Sprite()
 	erase(_pos.x, _pos.y);
 }
 
-vector Sprite::getPosition()
+
+vector 
+Sprite::getPosition()
 {
 	return _pos;
 }
@@ -68,12 +70,16 @@ Sprite::move(float p_x, float p_y)
 	return true;
 }
 
-void Sprite::draw(float p_x, float p_y)
+
+void
+Sprite::draw(float p_x, float p_y)
 {
 	_drawArea->drawSprite(_spriteIndex, (int)p_x, (int)p_y);
 }
 
-void Sprite::erase(float p_x, float p_y)
+
+void
+Sprite::erase(float p_x, float p_y)
 {
 	_drawArea->eraseSprite((int)p_x, (int)p_y);
 }

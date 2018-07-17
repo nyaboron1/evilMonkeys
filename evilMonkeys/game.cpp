@@ -9,7 +9,8 @@
 // set game speed
 #define GAME_SPEED (1000 / 10)
 
-bool Game::run(void)
+bool 
+Game::run()
 {
 	_drawArea.createSprite(0, '$');
 
@@ -40,11 +41,12 @@ bool Game::run(void)
 }
 
 
-bool Game::getInput(char* c)
+bool 
+Game::getInput(char* p_c)
 {
 	if (_kbhit())
 	{
-		*c = _getch();
+		*p_c = _getch();
 		return true;
 	}
 
@@ -52,7 +54,8 @@ bool Game::getInput(char* c)
 }
 
 
-void Game::timerUpdate(void)
+void 
+Game::timerUpdate()
 {
 	double currentTime = timeGetTime() - _lastTime;
 

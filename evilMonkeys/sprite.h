@@ -42,8 +42,9 @@ public:
 
 	bool isAlive();
 
-	virtual void addLives(int);
+	virtual void addLives(int p_lives);
 	virtual bool move(float p_x, float p_y);
+
 
 protected:
 	DrawEngine* _drawArea;

@@ -6,13 +6,12 @@
 
 class Game
 {
-
 public:
 	bool run (void);
 
 protected:
-	bool getInput (char*);
-	void timerUpdate (void);
+	bool getInput (char* p_c);
+	void timerUpdate ();
 	
 private:
 	Character* _player;

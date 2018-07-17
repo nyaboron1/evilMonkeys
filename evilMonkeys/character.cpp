@@ -6,27 +6,28 @@ Character::Character(DrawEngine * de,
 	int lives, char u, char d, 
 	char l, char r) : Sprite(de, index, x, y, l)
 {
-	up_key = u;
-	down_key = d;
-	left_key = l;
-	right_key = r;
+	_up_key = u;
+	_down_key = d;
+	_left_key = l;
+	_right_key = r;
 
 	_classID = CHARACTER_CLASSID;
 }
 
 
-bool Character::keyPress (char c)
+bool 
+Character::keyPress (char p_c)
 {
-	if (c == up_key)
+	if (p_c == _up_key)
 		return move(0, -1);
 
-	else if (c == down_key)
+	else if (p_c == _down_key)
 		return move(0, 1);
 
-	else if (c == left_key)
+	else if (p_c == _left_key)
 		return move(-1, 0);
 
-	else if (c == right_key)
+	else if (p_c == _right_key)
 		return move(1, 0);
 }
 
